@@ -1,0 +1,63 @@
+
+<dict>
+	cocos2d.x.version: 2.2.1
+	cocos2d.x.compiled_with_profiler: false
+	cocos2d.x.compiled_with_gl_state_cache: true
+	gl.vendor: Intel
+	gl.renderer: Intel(R) HD Graphics
+	gl.version: 2.1.0 - Build 8.15.10.2555
+	gl.max_texture_size: 4096
+	gl.max_texture_units: 16
+	gl.supports_PVRTC: false
+	gl.supports_NPOT: true
+	gl.supports_BGRA8888: false
+	gl.supports_discard_framebuffer: false
+	gl.supports_vertex_array_object: true
+</dict>
+lua_loadChunksFromZIP() - load zip file: E:\android\quick-cocos2d-x\lib\framework_precompiled\framework_precompiled.zip
+lua_loadChunksFromZIP() - loaded chunks count: 60
+------------------------------------------------
+LOAD LUA FILE: E:/android/quick-cocos2d-x/samples/luajavabridge/proj.android/assets/scripts/main.lua
+------------------------------------------------
+[0.1940] [INFO] 
+[0.1945] [INFO] # DEBUG                        = 2
+[0.1952] [INFO] #
+[0.1960] [INFO] # device.platform              = windows
+[0.1965] [INFO] # device.model                 = unknown
+[0.1971] [INFO] # device.language              = cn
+[0.1978] [INFO] # device.writablePath          = E:\android\quick-cocos2d-x\samples\luajavabridge\proj.android\
+[0.1989] [INFO] # device.cachePath             = E:\android\quick-cocos2d-x\samples\luajavabridge\proj.android\
+[0.1999] [INFO] # device.directorySeparator    = \
+[0.2008] [INFO] # device.pathSeparator         = ;
+[0.2014] [INFO] #
+[0.2049] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.2054] [INFO] # CONFIG_SCREEN_WIDTH          = 1066.67
+[0.2063] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+[0.2072] [INFO] # display.widthInPixels        = 800.00
+[0.2080] [INFO] # display.heightInPixels       = 480.00
+[0.2087] [INFO] # display.contentScaleFactor   = 0.75
+[0.2095] [INFO] # display.width                = 1066.67
+[0.2102] [INFO] # display.height               = 640.00
+[0.2108] [INFO] # display.cx                   = 533.33
+[0.2115] [INFO] # display.cy                   = 320.00
+[0.2132] [INFO] # display.left                 = 0.00
+[0.2139] [INFO] # display.right                = 1066.67
+[0.2144] [INFO] # display.top                  = 640.00
+[0.2150] [INFO] # display.bottom               = 0.00
+[0.2157] [INFO] # display.c_left               = -533.33
+[0.2163] [INFO] # display.c_right              = 533.33
+[0.2169] [INFO] # display.c_top                = 320.00
+[0.2176] [INFO] # display.c_bottom             = -320.00
+[0.2182] [INFO] #
+[0.2828] [INFO] Scene "TestUIImageScene:onEnter()"
+[5.8277] [INFO] APPLY LAYOUT layout-2
+[5.8305] [INFO] APPLY LAYOUT layout-2
+[5.8333] [INFO] APPLY LAYOUT layout-2
+[5.8372] [INFO] APPLY LAYOUT layout-2
+[5.8379] [INFO] APPLY LAYOUT layout-2
+[5.8389] Option 4 selected, Option 0 unselected
+[5.8592] [INFO] Scene "TestUIImageScene:onExit()"
+[5.8662] [INFO] Scene "TestUIButtonScene:onEnter()"
+[6.3822] [INFO] Scene "TestUIButtonScene:onExit()"
+[6.3886] [INFO] Scene "TestUISliderScene:onEnter()"
+[7.5424] [INFO] Scene "TestUISliderScene:onExit()"
