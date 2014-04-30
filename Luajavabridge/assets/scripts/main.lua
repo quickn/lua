@@ -6,6 +6,7 @@ function __G__TRACKBACK__(errorMessage)
     print("----------------------------------------")
 end
 
-require("app.UIDemoApp").new():run()
---require("game")
+--require("app.UIDemoApp").new():run()
+--require("beachmakeGame")
 --game.startup()
+require("app.MyApp").new():run()
