@@ -10,5 +10,9 @@ end
 --require("beachmakeGame")
 --game.startup()
 --require("app.MyApp").new():run()
-require("DragGame")
-game.startup()
+--require("DragGame")
+--game.startup()
+
+require("config")
+display.replaceScene(require("scenes.NightMainScene").new())
+

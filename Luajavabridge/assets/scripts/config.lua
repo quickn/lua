@@ -19,3 +19,26 @@ GAME_SFX = {
     flipCoin       = "sfx/ConFlipSound.mp3",
     levelCompleted = "sfx/LevelWinSound.mp3",
 }
+
+
+CCFileUtils:sharedFileUtils():addSearchPath("assets/res/night/")
+
+require("framework.init")
+
+-- musics
+MUSIC = {
+    backgroundMusic = "sound/newdali.mp3",
+}
+
+-- effects
+EFFECT = {}
+
+-- preload all musics
+for k, v in pairs(MUSIC) do
+    audio.preloadMusic(v)
+end
+
+-- preload all effects
+for k, v in pairs(EFFECT) do
+    audio.preloadEffect(v)
+end
