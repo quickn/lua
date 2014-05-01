@@ -9,4 +9,6 @@ end
 --require("app.UIDemoApp").new():run()
 --require("beachmakeGame")
 --game.startup()
-require("app.MyApp").new():run()
+--require("app.MyApp").new():run()
+require("DragGame")
+game.startup()
