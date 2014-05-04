@@ -8,11 +8,12 @@ end
 
 --require("app.UIDemoApp").new():run()
 --require("beachmakeGame")
---game.startup()
+require("game")
+game.startup()
 --require("app.MyApp").new():run()
 --require("DragGame")
 --game.startup()
 
-require("config")
-display.replaceScene(require("scenes.NightMainScene").new())
+--require("config")
+--display.replaceScene(require("scenes.NightMainScene").new())
 

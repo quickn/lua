@@ -21,7 +21,7 @@ GAME_SFX = {
 }
 
 
-CCFileUtils:sharedFileUtils():addSearchPath("assets/res/night/")
+--CCFileUtils:sharedFileUtils():addSearchPath("assets/res/night/")
 
 require("framework.init")
 

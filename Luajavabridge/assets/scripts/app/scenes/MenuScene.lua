@@ -11,7 +11,7 @@ function MenuScene:ctor()
     self:addChild(self.bg)
 
     self.adBar = AdBar.new()
-    self:addChild(self.adBar)
+    --self:addChild(self.adBar)
 
     -- create menu
     self.moreGamesButton = BubbleButton.new({
@@ -28,6 +28,7 @@ function MenuScene:ctor()
         end,
     })
 
+    --给图片按钮加上参数
     self.startButton = BubbleButton.new({
         image = "#MenuSceneStartButton.png",
         x = display.right - 150,
@@ -48,6 +49,7 @@ function MenuScene:ctor()
     -- keypad layer, for android
     self.layer = display.newLayer()
     self.layer:addKeypadEventListener(function(event)
+        --退出程序
         if event == "back" then
             audio.playSound(GAME_SFX.backButton)
             app:exit()

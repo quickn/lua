@@ -7,7 +7,10 @@ local PlayLevelScene = class("PlayLevelScene", function()
     return display.newScene("PlayLevelScene")
 end)
 
+local index;
+
 function PlayLevelScene:ctor(levelIndex)
+    index = levelIndex;
     local bg = display.newSprite("#PlayLevelSceneBg.png")
     -- make background sprite always align top
     bg:setPosition(display.cx, display.top - bg:getContentSize().height / 2)
@@ -57,6 +60,8 @@ function PlayLevelScene:onLevelCompleted()
     self:addChild(dialog)
 
     transition.moveTo(dialog, {time = 0.7, y = display.top - dialog:getContentSize().height / 2 - 40, easing = "BOUNCEOUT"})
+
+    app:playLevel(index+1)
 end
 
 function PlayLevelScene:onEnter()

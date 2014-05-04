@@ -19,48 +19,92 @@ lua_loadChunksFromZIP() - loaded chunks count: 60
 ------------------------------------------------
 LOAD LUA FILE: D:/git/luaJava/Luajavabridge/assets/scripts/main.lua
 ------------------------------------------------
-[0.1681] [INFO] 
-[0.1684] [INFO] # DEBUG                        = 2
-[0.1687] [INFO] #
-[0.1696] [INFO] # device.platform              = windows
-[0.1701] [INFO] # device.model                 = unknown
-[0.1709] [INFO] # device.language              = cn
-[0.1717] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
-[0.1724] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
-[0.1729] [INFO] # device.directorySeparator    = \
-[0.1741] [INFO] # device.pathSeparator         = ;
-[0.1751] [INFO] #
-[0.1801] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.1806] [INFO] # CONFIG_SCREEN_WIDTH          = 1600.00
-[0.1812] [INFO] # CONFIG_SCREEN_HEIGHT         = 960.00
-[0.1818] [INFO] # display.widthInPixels        = 800.00
-[0.1825] [INFO] # display.heightInPixels       = 480.00
-[0.1831] [INFO] # display.contentScaleFactor   = 0.50
-[0.1837] [INFO] # display.width                = 1600.00
-[0.1843] [INFO] # display.height               = 960.00
-[0.1849] [INFO] # display.cx                   = 800.00
-[0.1855] [INFO] # display.cy                   = 480.00
-[0.1861] [INFO] # display.left                 = 0.00
-[0.1869] [INFO] # display.right                = 1600.00
-[0.1875] [INFO] # display.top                  = 960.00
-[0.1881] [INFO] # display.bottom               = 0.00
-[0.1887] [INFO] # display.c_left               = -800.00
-[0.1893] [INFO] # display.c_right              = 800.00
-[0.1900] [INFO] # display.c_top                = 480.00
-[0.1908] [INFO] # display.c_bottom             = -480.00
-[0.1915] [INFO] #
-[0.1933] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
-[1.0676] [INFO] Scene "MainScene:onEnter()"
-[1.1320] [INFO] audio.playMusic() - filename: sound/newdali.mp3, isLoop: true
-CCHTTPRequest[0x0001] - create request with url: http://lixianlin.github.io/YeDian-version.txt
-[2.0115] [INFO] Check version from http://lixianlin.github.io/YeDian-version.txt ...
-[2.0328] ----------------------------------------
-[2.0335] LUA ERROR: ASSERT FAILED ON LUA EXECUTE: Request not completed
+[0.1794] [INFO] 
+[0.1797] [INFO] # DEBUG                        = 2
+[0.1800] [INFO] #
+[0.1807] [INFO] # device.platform              = windows
+[0.1816] [INFO] # device.model                 = unknown
+[0.1820] [INFO] # device.language              = cn
+[0.1824] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
+[0.1829] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
+[0.1834] [INFO] # device.directorySeparator    = \
+[0.1838] [INFO] # device.pathSeparator         = ;
+[0.1844] [INFO] #
+[0.1873] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.1877] [INFO] # CONFIG_SCREEN_WIDTH          = 1600.00
+[0.1882] [INFO] # CONFIG_SCREEN_HEIGHT         = 960.00
+[0.1888] [INFO] # display.widthInPixels        = 800.00
+[0.1893] [INFO] # display.heightInPixels       = 480.00
+[0.1898] [INFO] # display.contentScaleFactor   = 0.50
+[0.1903] [INFO] # display.width                = 1600.00
+[0.1908] [INFO] # display.height               = 960.00
+[0.1913] [INFO] # display.cx                   = 800.00
+[0.1918] [INFO] # display.cy                   = 480.00
+[0.1923] [INFO] # display.left                 = 0.00
+[0.1928] [INFO] # display.right                = 1600.00
+[0.1932] [INFO] # display.top                  = 960.00
+[0.1937] [INFO] # display.bottom               = 0.00
+[0.1942] [INFO] # display.c_left               = -800.00
+[0.1947] [INFO] # display.c_right              = 800.00
+[0.1952] [INFO] # display.c_top                = 480.00
+[0.1957] [INFO] # display.c_bottom             = -480.00
+[0.1961] [INFO] #
+[0.1973] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
+[0.2262] [INFO] Scene "MainScene:onEnter()"
+[1.0244] ----------------------------------------
+[1.0251] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
 
-[2.0347] 
+[1.0268] 
 stack traceback:
-	[C]: in function 'getResponseStatusCode'
-	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/NightMainScene.lua"]:175: in function <[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/NightMainScene.lua"]:173>
-[2.0360] ----------------------------------------
-CCHTTPRequest[0x0001] - request removed
-[92.2666] [INFO] Scene "MainScene:onExit()"
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[1.0279] ----------------------------------------
+[1.8085] ----------------------------------------
+[1.8092] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[1.8108] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[1.8119] ----------------------------------------
+[2.4804] ----------------------------------------
+[2.4823] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[2.4844] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[2.4857] ----------------------------------------
+[2.9685] ----------------------------------------
+[2.9692] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[2.9707] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[2.9718] ----------------------------------------
+[3.3843] ----------------------------------------
+[3.3852] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[3.3868] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[3.3878] ----------------------------------------
+[3.6884] ----------------------------------------
+[3.6892] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[3.6908] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[3.6918] ----------------------------------------
+[4.1365] ----------------------------------------
+[4.1370] LUA ERROR: [string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: attempt to index global 'luaj' (a nil value)
+
+[4.1385] 
+stack traceback:
+	[string "D:/git/luaJava/Luajavabridge/assets/scripts/scenes/MainScene.lua"]:25: in function ''
+	[string "framework.ui"]: in main chunk
+[4.1394] ----------------------------------------
+[41.7041] [INFO] Scene "MainScene:onExit()"
