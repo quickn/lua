@@ -41,11 +41,11 @@ public class Luajavabridge extends Cocos2dxActivity {
 	}
 
 	static {
-		//加载libgame.so
+		// 加载libgame.so
 		System.loadLibrary("game");
 	}
 
-	static public void showAlertDialog(final String title,
+	static public boolean showAlertDialog(final String title,
 			final String message, final int luaCallbackFunction) {
 		s_instance.runOnUiThread(new Runnable() {
 			@Override
@@ -76,6 +76,7 @@ public class Luajavabridge extends Cocos2dxActivity {
 				alertDialog.show();
 			}
 		});
+		return true;
 	}
 
 	public String showArticles() {
