@@ -55,45 +55,49 @@ function game.showArticles()
   local game =  display.newScene("game");
   createGrid(game)
   local scrollView = CCScrollView:create()
-  scrollView:setPosition(ccp(0,0))
+  scrollView:setPosition(ccp(0,100))
   scrollView:setScale(1.0)
-  --scrollView:registerScriptHandler(function() self:changeScrollState() end,0)
-  scrollView:setViewSize(CCSizeMake(display.width,display.height))
+  scrollView:setViewSize(CCSizeMake(display.width,display.height-200))
   scrollView:setDirection(kCCScrollViewDirectionVertical)
   scrollView:setClippingToBounds(true)
   scrollView:setBounceable(true)
-  --scrollView:setColor(display.RED)
-
-  for i = 0,10 do
-    local node = display.newNode()
-    node:setContentSize(CCSize(display.width, 100))
+  --设置颜色
+  local layerColor = CCLayerColor:create(ccc4(125,123,0,255));
+  scrollView:setContainer(layerColor)
+  for i = 0,5 do
+    local  menu = CCMenu:create()
+    local function onTouchEvent(eventType,x,y)
+      if eventType ~= 'began' then
+        device.showAlert('eventType',eventType);
+      end
+    end
+    local function onNodeEvnent(event)
+      device.showAlert('eventType',event);
+    end
+    menu:setContentSize(CCSize(display.width, 100))
     y = 100*i;
-    node:setPosition(display.cx, display.height-y)
-    node:setColor(ccc3(64, 64, 64))
---    node:addTouchEventListener(handler(node,function()
---      device.showAlert("Confirm Exit", i)
---    end))
-
-    local sprite1 = display.newSprite("Button01.png"):align(display.CENTER_LEFT);
-    cc.ui.UILabel.new({text = "align CENTER ddddddddddd dddddddddddd", size = 35, color = display.COLOR_BLACK,dimensions=CCSizeMake(200,100)})
-      :align(display.CENTER_RIGHT)
-      :addTo(node)
-    require("framework.api.EventProtocol").extend(node)
-
-    node:addEventListener("CLICKED_EVENT", handler(node,function()
-      device.showAlert("Confirm Exit", i)
-    end))
-
-    --local label,H = Util.createTextDialog('ddddddddddddddddddddddddddddddddd',30,10);
-    --label.setDimensions(CCSizeMake(50, 0));
-    --node:addChild(label)
-    node:addChild(sprite1)
-    scrollView:addChild(node);
-  --game:addChild(node)
-  --scrollView:setContainer(note)
-  --transition.moveBy(node, {time = 2.0, x = 100})
+    menu:setPosition(0,display.height-y-200);
+    --    cc.ui.UILabel.new({text = tostring(i).."align CENTER ddddddddddd dddddddddddd", size = 35, color = display.COLOR_RED,dimensions=CCSizeMake(200,100)})
+    --      :align(display.TOP_LEFT)
+    --      :addTo(layer)
+    --local sprite1 = CCSprite:create("Button01.png")
+    local sprite1 = display.newSprite("Button01.png",display.cx):align(display.TOP_RIGHT);
+    local item3 = CCMenuItemSprite:create(sprite1,null)
+    item3:registerScriptTapHandler(onTouchEvent)
+    local item4 = CCMenuItemFont:create("I toggle enable items"..tostring(i))
+    item4:registerScriptTapHandler(onTouchEvent)
+    menu:addChild(item4);
+    menu:addChild(item3)
+    scrollView:addChild(menu)
+    --transition.moveBy(node, {time = 2.0, x = 100})
   end
-  --local layer = display.newLayer()
+  scrollView:addKeypadEventListener(function(event)
+    --退出程序
+    if event == "back" then
+      os.exit()
+    end
+  end)
+  scrollView:setKeypadEnabled(true)
   game:addChild(scrollView)
   display.replaceScene(game, "fade", 0.6, display.COLOR_WHITE)
 end

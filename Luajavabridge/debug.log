@@ -19,36 +19,69 @@ lua_loadChunksFromZIP() - loaded chunks count: 60
 ------------------------------------------------
 LOAD LUA FILE: D:/git/luaJava/Luajavabridge/assets/scripts/main.lua
 ------------------------------------------------
-[0.1969] [INFO] 
-[0.1972] [INFO] # DEBUG                        = 2
-[0.1975] [INFO] #
-[0.1985] [INFO] # device.platform              = windows
-[0.1990] [INFO] # device.model                 = unknown
-[0.1996] [INFO] # device.language              = cn
-[0.2003] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
-[0.2009] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
-[0.2016] [INFO] # device.directorySeparator    = \
-[0.2026] [INFO] # device.pathSeparator         = ;
-[0.2033] [INFO] #
-[0.2067] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.2073] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
-[0.2080] [INFO] # CONFIG_SCREEN_HEIGHT         = 700.00
-[0.2087] [INFO] # display.widthInPixels        = 640.00
-[0.2094] [INFO] # display.heightInPixels       = 700.00
-[0.2101] [INFO] # display.contentScaleFactor   = 1.00
-[0.2107] [INFO] # display.width                = 640.00
-[0.2114] [INFO] # display.height               = 700.00
-[0.2123] [INFO] # display.cx                   = 320.00
-[0.2129] [INFO] # display.cy                   = 350.00
-[0.2135] [INFO] # display.left                 = 0.00
-[0.2144] [INFO] # display.right                = 640.00
-[0.2151] [INFO] # display.top                  = 700.00
-[0.2158] [INFO] # display.bottom               = 0.00
-[0.2166] [INFO] # display.c_left               = -320.00
-[0.2172] [INFO] # display.c_right              = 320.00
-[0.2179] [INFO] # display.c_top                = 350.00
-[0.2185] [INFO] # display.c_bottom             = -350.00
-[0.2191] [INFO] #
-[0.2207] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
-[0.3399] [INFO] Scene "game:onEnter()"
-[14.5254] [INFO] Scene "game:onExit()"
+[0.1873] [INFO] 
+[0.1876] [INFO] # DEBUG                        = 2
+[0.1880] [INFO] #
+[0.1889] [INFO] # device.platform              = windows
+[0.1896] [INFO] # device.model                 = unknown
+[0.1903] [INFO] # device.language              = cn
+[0.1909] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
+[0.1915] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
+[0.1921] [INFO] # device.directorySeparator    = \
+[0.1927] [INFO] # device.pathSeparator         = ;
+[0.1933] [INFO] #
+[0.1968] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.1973] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
+[0.1981] [INFO] # CONFIG_SCREEN_HEIGHT         = 700.00
+[0.1988] [INFO] # display.widthInPixels        = 640.00
+[0.1995] [INFO] # display.heightInPixels       = 700.00
+[0.2002] [INFO] # display.contentScaleFactor   = 1.00
+[0.2009] [INFO] # display.width                = 640.00
+[0.2016] [INFO] # display.height               = 700.00
+[0.2022] [INFO] # display.cx                   = 320.00
+[0.2029] [INFO] # display.cy                   = 350.00
+[0.2036] [INFO] # display.left                 = 0.00
+[0.2045] [INFO] # display.right                = 640.00
+[0.2052] [INFO] # display.top                  = 700.00
+[0.2059] [INFO] # display.bottom               = 0.00
+[0.2066] [INFO] # display.c_left               = -320.00
+[0.2072] [INFO] # display.c_right              = 320.00
+[0.2079] [INFO] # display.c_top                = 350.00
+[0.2086] [INFO] # display.c_bottom             = -350.00
+[0.2093] [INFO] #
+[0.2108] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
+[0.2204] height:640
+[0.2217] x 0  y 640 tag : -1 
+[0.2332] height:620
+[0.2338] x 320  y 620 tag : 2 
+[0.2659] height:50
+[0.2665] x 0  y 50 tag : 3 
+[0.2767] height:0
+[0.2774] x 0  y 0 tag : -1 
+[0.2924] [INFO] Scene "Index:onEnter()"
+[1.0794] cell touched at index: 4
+[3.1993] cell touched at index: 6
+[5.1208] cell touched at index: 7
+[32.6547] cell touched at index: 5
+[35.3987] cell touched at index: 12
+[37.6093] cell touched at index: 17
+[60.6062] cell touched at index: 4
+[62.8222] cell touched at index: 7
+[65.0141] cell touched at index: 16
+[67.3502] cell touched at index: 17
+[71.0469] cell touched at index: 16
+[73.2306] cell touched at index: 5
+[75.3180] cell touched at index: 2
+[77.8460] cell touched at index: 13
+[80.5259] cell touched at index: 18
+[83.7098] cell touched at index: 11
+[85.0139] cell touched at index: 10
+[87.7139] cell touched at index: 9
+[91.9817] cell touched at index: 16
+[94.1337] cell touched at index: 17
+[96.4112] cell touched at index: 14
+[98.6818] cell touched at index: 9
+[101.2827] cell touched at index: 8
+[103.9575] cell touched at index: 11
+[105.5501] cell touched at index: 13
+[107.6037] [INFO] Scene "Index:onExit()"

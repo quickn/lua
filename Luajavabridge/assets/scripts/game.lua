@@ -7,7 +7,6 @@ game = {}
 
 function game.startup()
     CCFileUtils:sharedFileUtils():addSearchPath("res/")
-
     game.enterMainScene()
 end
 

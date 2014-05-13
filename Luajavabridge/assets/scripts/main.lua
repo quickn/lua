@@ -23,6 +23,8 @@ end
 --CCFileUtils:sharedFileUtils():addSearchPath("assets/res/")
 --display.replaceScene(require("test.UiScene").new(), "fade", 0.6, display.COLOR_WHITE)
 
-import("test.test")
-game.startup();
+--import("yl.app")
+--app.startup();
+
+require("yl.app").new():run()
 
