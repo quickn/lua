@@ -97,20 +97,23 @@ text:文本内容
 fontsize:字体尺寸
 number:每行字数
 --]]
-function Util.createTextDialog(text,fontsize,number) 
+function Util.createTextDialog(text,fontsize,number,W) 
 	-- local no=#text/3 --中文字符串的长度
 	local no=string.utf8len(text)--中文字符串的长度
 	local line =math.ceil(no/number)--的到行数
 	local lab=CCLabelTTF:create(text,"Arial",fontsize)
-	local W=300
-	W=W/15*number
-	if line~=1 then
-		lab=CCLabelTTF:create(text,CCSize(250,30),kCCTextAlignmentLeft,"Arial",fontsize)
+	if nil==W then
+		W=300;
+		W=W/15*number
 	end
-	lab:setAnchorPoint(ccp(0,0.5))
+	if line~=1 then
+		lab=CCLabelTTF:create(text,"Arial",fontsize,CCSize(W, lab:getContentSize().height*line),kCCTextAlignmentLeft,kCCVerticalTextAlignmentCenter)
+		--lab=CCLabelTTF:create(text,CCSize(250,30),kCCTextAlignmentLeft,"Arial",fontsize)
+	end
+	--lab:setAnchorPoint(ccp(0,1))
 	lab:setColor(ccc3(33,33,33))
 	local H=(35-math.floor(line/3.8)*2)*line
-	--lab.setContentSize(H);
+	--lab:setContentSize(H);
 	return lab,H
 end
 --[[
@@ -145,4 +148,28 @@ function Util.toOrignMenuItem(obj)
 		item.image=obj.image;
 	end
 	return item;
+end
+
+function Util.createToast(msg, showtime)
+		local msglabel = CCLabelTTF:create(msg, "Arial", 30);
+		local layer = CCLayerColor:create(ccc4(54, 54, 54, 0), msglabel:getContentSize().width + 50, msglabel:getContentSize().height + 10);
+		layer:ignoreAnchorPointForPosition(false)
+		layer:setAnchorPoint(ccp(0.5,0.5))
+		layer:setPosition(cc.p(display.cx, display.cy - 100));
+		layer:addChild(msglabel);
+		msglabel:setPosition(cc.p(layer:getContentSize().width / 2, msglabel:getContentSize().height / 2 + 5));
+		local delay = CCDelayTime:create(0);
+		local action1 = CCFadeIn:create(showtime / 2);
+		local action1Back = action1:reverse();
+		local callfunc = CCCallFunc:create(function()
+			layer:removeFromParentAndCleanup(true)
+			-- SZUtil.getCurScene().removeChild(layer);
+		end)
+		local arr=CCArray:create();
+        arr:addObject(action1)
+        arr:addObject(delay)
+        arr:addObject(action1Back)
+        arr:addObject(callfunc)
+		local action = layer:runAction(CCSequence:create(arr));
+		return layer;
 end

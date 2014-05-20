@@ -24,10 +24,7 @@ THE SOFTWARE.
 package com.quick_x.sample.activity;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxLuaJavaBridge;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -42,45 +39,46 @@ public class Luajavabridge extends Cocos2dxActivity {
 
 	static {
 		// 加载libgame.so
+		Log.e("Luajavabridge", "加载libgame.so");
 		System.loadLibrary("game");
 	}
 
-	static public boolean showAlertDialog(final String title,
-			final String message, final int luaCallbackFunction) {
-		s_instance.runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				AlertDialog alertDialog = new AlertDialog.Builder(s_instance)
-						.create();
-				alertDialog.setTitle(title);
-				alertDialog.setMessage(message);
-				alertDialog.setButton("OK",
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog,
-									int which) {
-								Log.e("bridge", "msg");
-								s_instance.runOnGLThread(new Runnable() {
-									@Override
-									public void run() {
-										Cocos2dxLuaJavaBridge
-												.callLuaFunctionWithString(
-														luaCallbackFunction,
-														"CLICKED");
-										Cocos2dxLuaJavaBridge
-												.releaseLuaFunction(luaCallbackFunction);
-									}
-								});
-							}
-						});
-				alertDialog.setIcon(R.drawable.icon);
-				alertDialog.show();
-			}
-		});
-		return true;
-	}
-
-	public String showArticles() {
-		return "{id='1',title='title',img='123.jpg'}";
-	}
+//	static public boolean showAlertDialog(final String title,
+//			final String message, final int luaCallbackFunction) {
+//		s_instance.runOnUiThread(new Runnable() {
+//			@Override
+//			public void run() {
+//				AlertDialog alertDialog = new AlertDialog.Builder(s_instance)
+//						.create();
+//				alertDialog.setTitle(title);
+//				alertDialog.setMessage(message);
+//				alertDialog.setButton("OK",
+//						new DialogInterface.OnClickListener() {
+//							public void onClick(DialogInterface dialog,
+//									int which) {
+//								Log.e("bridge", "msg");
+//								s_instance.runOnGLThread(new Runnable() {
+//									@Override
+//									public void run() {
+//										Cocos2dxLuaJavaBridge
+//												.callLuaFunctionWithString(
+//														luaCallbackFunction,
+//														"CLICKED");
+//										Cocos2dxLuaJavaBridge
+//												.releaseLuaFunction(luaCallbackFunction);
+//									}
+//								});
+//							}
+//						});
+//				alertDialog.setIcon(R.drawable.icon);
+//				alertDialog.show();
+//			}
+//		});
+//		return true;
+//	}
+//
+//	public String showArticles() {
+//		return "{id='1',title='title',img='123.jpg'}";
+//	}
 
 }

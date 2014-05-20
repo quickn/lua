@@ -3,12 +3,6 @@ require("config")
 require("framework.init")
 scene = nil
 -- define global module
-Main = {}
-
-function Main:instance()
-    o = require("app.scenes.index").new()
-    return o;
-end
 
 local MyApp = class("MyApp", cc.mvc.AppBase)
 
@@ -20,15 +14,13 @@ end
 function MyApp:run()
   CCFileUtils:sharedFileUtils():addSearchPath("assets/res/yl/")
   --self:enterScene('article', nil, "fade", 0.6, display.COLOR_WHITE)
-  display.replaceScene(Main:instance(), "fade", 0.6, display.COLOR_WHITE)
+ -- display.replaceScene(require("app.scenes.index").new(), "fade", 0.6, display.COLOR_WHITE)
+  self:enterScene("index", nil, "fade", 0.6, display.COLOR_WHITE)
 end
 
 function MyApp:exit()
   os.exit()
 end
 
-function MyApp:enterMainScene()
-  display.replaceScene(require("yl.index").new(), "fade", 0.6, display.COLOR_WHITE)
-end
 
 return MyApp

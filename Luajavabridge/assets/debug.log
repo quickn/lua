@@ -19,43 +19,36 @@ lua_loadChunksFromZIP() - loaded chunks count: 60
 ------------------------------------------------
 LOAD LUA FILE: D:/git/luaJava/Luajavabridge/assets/scripts/main.lua
 ------------------------------------------------
-[0.1733] [INFO] 
-[0.1738] [INFO] # DEBUG                        = 2
-[0.1745] [INFO] #
-[0.1761] [INFO] # device.platform              = windows
-[0.1767] [INFO] # device.model                 = unknown
-[0.1773] [INFO] # device.language              = cn
-[0.1780] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\assets\
-[0.1794] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\assets\
-[0.1807] [INFO] # device.directorySeparator    = \
-[0.1822] [INFO] # device.pathSeparator         = ;
-[0.1828] [INFO] #
-[0.1877] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.1884] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
-[0.1892] [INFO] # CONFIG_SCREEN_HEIGHT         = 960.00
-[0.1901] [INFO] # display.widthInPixels        = 640.00
-[0.1909] [INFO] # display.heightInPixels       = 960.00
-[0.1916] [INFO] # display.contentScaleFactor   = 1.00
-[0.1923] [INFO] # display.width                = 640.00
-[0.1932] [INFO] # display.height               = 960.00
-[0.1939] [INFO] # display.cx                   = 320.00
-[0.1949] [INFO] # display.cy                   = 480.00
-[0.1957] [INFO] # display.left                 = 0.00
-[0.1965] [INFO] # display.right                = 640.00
-[0.1973] [INFO] # display.top                  = 960.00
-[0.1980] [INFO] # display.bottom               = 0.00
-[0.1987] [INFO] # display.c_left               = -320.00
-[0.1995] [INFO] # display.c_right              = 320.00
-[0.2002] [INFO] # display.c_top                = 480.00
-[0.2010] [INFO] # display.c_bottom             = -480.00
-[0.2017] [INFO] #
-[0.2033] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
-Get data from file(Button01.png) failed!
-[0.2668] [ERR] display.newSprite() - create sprite failure, filename Button01.png
-[0.2682] 
-stack traceback:
-	[string "framework.display"]: in function 'newSprite'
-	[string "D:/git/luaJava/Luajavabridge/assets/scripts/test/test.lua"]:78: in function 'showArticles'
-	[string "D:/git/luaJava/Luajavabridge/assets/scripts/test/test.lua"]:13: in function 'startup'
-	[string "D:/git/luaJava/Luajavabridge/assets/scripts/main.lua"]:27: in main chunk
-[LUA ERROR] [string "D:/git/luaJava/Luajavabridge/assets/scripts/test/test.lua"]:78: attempt to call method 'align' (a nil value)
+[0.1803] [INFO] 
+[0.1807] [INFO] # DEBUG                        = 2
+[0.1812] [INFO] #
+[0.1823] [INFO] # device.platform              = windows
+[0.1830] [INFO] # device.model                 = unknown
+[0.1836] [INFO] # device.language              = cn
+[0.1843] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\assets\
+[0.1854] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\assets\
+[0.1866] [INFO] # device.directorySeparator    = \
+[0.1872] [INFO] # device.pathSeparator         = ;
+[0.1877] [INFO] #
+[0.1914] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.1920] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
+[0.1929] [INFO] # CONFIG_SCREEN_HEIGHT         = 700.00
+[0.1936] [INFO] # display.widthInPixels        = 640.00
+[0.1944] [INFO] # display.heightInPixels       = 700.00
+[0.1951] [INFO] # display.contentScaleFactor   = 1.00
+[0.1960] [INFO] # display.width                = 640.00
+[0.1968] [INFO] # display.height               = 700.00
+[0.1975] [INFO] # display.cx                   = 320.00
+[0.1983] [INFO] # display.cy                   = 350.00
+[0.1991] [INFO] # display.left                 = 0.00
+[0.1999] [INFO] # display.right                = 640.00
+[0.2007] [INFO] # display.top                  = 700.00
+[0.2020] [INFO] # display.bottom               = 0.00
+[0.2028] [INFO] # display.c_left               = -320.00
+[0.2034] [INFO] # display.c_right              = 320.00
+[0.2041] [INFO] # display.c_top                = 350.00
+[0.2047] [INFO] # display.c_bottom             = -350.00
+[0.2054] [INFO] #
+[0.2069] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
+Get data from file(sight_read_header_def.png) failed!
+[LUA ERROR] ASSERT FAILED ON LUA EXECUTE: CCSpriteBatchNode::initWithTexture() - invalid tex

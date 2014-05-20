@@ -19,69 +19,365 @@ lua_loadChunksFromZIP() - loaded chunks count: 60
 ------------------------------------------------
 LOAD LUA FILE: D:/git/luaJava/Luajavabridge/assets/scripts/main.lua
 ------------------------------------------------
-[0.1873] [INFO] 
-[0.1876] [INFO] # DEBUG                        = 2
-[0.1880] [INFO] #
-[0.1889] [INFO] # device.platform              = windows
-[0.1896] [INFO] # device.model                 = unknown
-[0.1903] [INFO] # device.language              = cn
-[0.1909] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
-[0.1915] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
-[0.1921] [INFO] # device.directorySeparator    = \
-[0.1927] [INFO] # device.pathSeparator         = ;
-[0.1933] [INFO] #
-[0.1968] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
-[0.1973] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
-[0.1981] [INFO] # CONFIG_SCREEN_HEIGHT         = 700.00
-[0.1988] [INFO] # display.widthInPixels        = 640.00
-[0.1995] [INFO] # display.heightInPixels       = 700.00
-[0.2002] [INFO] # display.contentScaleFactor   = 1.00
-[0.2009] [INFO] # display.width                = 640.00
-[0.2016] [INFO] # display.height               = 700.00
-[0.2022] [INFO] # display.cx                   = 320.00
-[0.2029] [INFO] # display.cy                   = 350.00
-[0.2036] [INFO] # display.left                 = 0.00
-[0.2045] [INFO] # display.right                = 640.00
-[0.2052] [INFO] # display.top                  = 700.00
-[0.2059] [INFO] # display.bottom               = 0.00
-[0.2066] [INFO] # display.c_left               = -320.00
-[0.2072] [INFO] # display.c_right              = 320.00
-[0.2079] [INFO] # display.c_top                = 350.00
-[0.2086] [INFO] # display.c_bottom             = -350.00
-[0.2093] [INFO] #
-[0.2108] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
-[0.2204] height:640
-[0.2217] x 0  y 640 tag : -1 
-[0.2332] height:620
-[0.2338] x 320  y 620 tag : 2 
-[0.2659] height:50
-[0.2665] x 0  y 50 tag : 3 
-[0.2767] height:0
-[0.2774] x 0  y 0 tag : -1 
-[0.2924] [INFO] Scene "Index:onEnter()"
-[1.0794] cell touched at index: 4
-[3.1993] cell touched at index: 6
-[5.1208] cell touched at index: 7
-[32.6547] cell touched at index: 5
-[35.3987] cell touched at index: 12
-[37.6093] cell touched at index: 17
-[60.6062] cell touched at index: 4
-[62.8222] cell touched at index: 7
-[65.0141] cell touched at index: 16
-[67.3502] cell touched at index: 17
-[71.0469] cell touched at index: 16
-[73.2306] cell touched at index: 5
-[75.3180] cell touched at index: 2
-[77.8460] cell touched at index: 13
-[80.5259] cell touched at index: 18
-[83.7098] cell touched at index: 11
-[85.0139] cell touched at index: 10
-[87.7139] cell touched at index: 9
-[91.9817] cell touched at index: 16
-[94.1337] cell touched at index: 17
-[96.4112] cell touched at index: 14
-[98.6818] cell touched at index: 9
-[101.2827] cell touched at index: 8
-[103.9575] cell touched at index: 11
-[105.5501] cell touched at index: 13
-[107.6037] [INFO] Scene "Index:onExit()"
+[0.1755] [INFO] 
+[0.1759] [INFO] # DEBUG                        = 2
+[0.1763] [INFO] #
+[0.1771] [INFO] # device.platform              = windows
+[0.1776] [INFO] # device.model                 = unknown
+[0.1783] [INFO] # device.language              = cn
+[0.1790] [INFO] # device.writablePath          = D:\git\luaJava\Luajavabridge\
+[0.1796] [INFO] # device.cachePath             = D:\git\luaJava\Luajavabridge\
+[0.1802] [INFO] # device.directorySeparator    = \
+[0.1808] [INFO] # device.pathSeparator         = ;
+[0.1813] [INFO] #
+[0.1846] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+[0.1852] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
+[0.1863] [INFO] # CONFIG_SCREEN_HEIGHT         = 700.00
+[0.1871] [INFO] # display.widthInPixels        = 640.00
+[0.1879] [INFO] # display.heightInPixels       = 700.00
+[0.1884] [INFO] # display.contentScaleFactor   = 1.00
+[0.1891] [INFO] # display.width                = 640.00
+[0.1898] [INFO] # display.height               = 700.00
+[0.1911] [INFO] # display.cx                   = 320.00
+[0.1916] [INFO] # display.cy                   = 350.00
+[0.1923] [INFO] # display.left                 = 0.00
+[0.1930] [INFO] # display.right                = 640.00
+[0.1937] [INFO] # display.top                  = 700.00
+[0.1943] [INFO] # display.bottom               = 0.00
+[0.1949] [INFO] # display.c_left               = -320.00
+[0.1954] [INFO] # display.c_right              = 320.00
+[0.1961] [INFO] # display.c_top                = 350.00
+[0.1968] [INFO] # display.c_bottom             = -350.00
+[0.1973] [INFO] #
+[0.1987] [INFO] audio.preloadMusic() - filename: sound/newdali.mp3
+[0.2085] height:640
+[0.2092] x 0  y 640 tag : -1 
+[0.2272] height:620
+[0.2277] x 320  y 620 tag : 2 
+[0.2593] height:50
+[0.2598] x 0  y 50 tag : 3 
+[0.2691] height:0
+[0.2700] x 0  y 0 tag : -1 
+[0.2866] [INFO] Scene "Index:onEnter()"
+[0.2873] platformwindows
+[1.3149] cell touched at index: 3
+[1.3608] 添加aticle
+[2.1704] eventbegan149y368
+[2.1782] eventmoved149y367
+[2.1787] self.offsetX0
+[2.1943] eventmoved149y366
+[2.1949] self.offsetX0
+[2.2022] eventmoved149y364
+[2.2027] self.offsetX0
+[2.2183] eventmoved149y362
+[2.2189] self.offsetX0
+[2.2263] eventmoved149y361
+[2.2268] self.offsetX0
+[2.2343] eventmoved149y360
+[2.2348] self.offsetX0
+[2.2423] eventmoved149y359
+[2.2428] self.offsetX0
+[2.2502] eventmoved149y358
+[2.2507] self.offsetX0
+[2.2582] eventmoved149y356
+[2.2588] self.offsetX0
+[2.2662] eventmoved149y355
+[2.2667] self.offsetX0
+[2.2742] eventmoved149y352
+[2.2747] self.offsetX0
+[2.2822] eventmoved149y350
+[2.2825] self.offsetX0
+[2.2902] eventmoved149y347
+[2.2906] self.offsetX0
+[2.2982] eventmoved149y343
+[2.2986] self.offsetX0
+[2.3062] eventmoved150y339.99996948242
+[2.3066] self.offsetX1
+[2.3142] eventmoved150y335
+[2.3145] self.offsetX1
+[2.3223] eventmoved151y332
+[2.3227] self.offsetX2
+[2.3308] eventmoved152y330
+[2.3313] self.offsetX3
+[2.3382] eventmoved154y326
+[2.3387] self.offsetX5
+[2.3463] eventmoved154y322
+[2.3468] self.offsetX5
+[2.3558] eventmoved156y318.00003051758
+[2.3565] self.offsetX7
+[2.3621] eventmoved159y313
+[2.3625] self.offsetX10
+[2.3702] eventmoved161y308
+[2.3708] self.offsetX12
+[2.3782] eventmoved163y303
+[2.3787] self.offsetX14
+[2.3862] eventmoved165y299
+[2.3866] self.offsetX16
+[2.3942] eventmoved167y293
+[2.3946] self.offsetX18
+[2.4022] eventmoved168y290
+[2.4025] self.offsetX19
+[2.4102] eventmoved170y284
+[2.4106] self.offsetX21
+[2.4181] eventmoved175y277
+[2.4185] self.offsetX26
+[2.4263] eventmoved175y272
+[2.4267] self.offsetX26
+[2.4342] eventmoved178y266
+[2.4345] self.offsetX29
+[2.4422] eventmoved179y260
+[2.4426] self.offsetX30
+[2.4501] eventmoved182y256
+[2.4505] self.offsetX33
+[2.4582] eventmoved183y252
+[2.4587] self.offsetX34
+[2.4662] eventmoved185y248.99998474121
+[2.4665] self.offsetX36
+[2.4743] eventmoved187y245.00001525879
+[2.4749] self.offsetX38
+[2.4823] eventmoved189y243.00001525879
+[2.4827] self.offsetX40
+[2.4903] eventmoved192y239
+[2.4907] self.offsetX43
+[2.4988] eventmoved192y237.99998474121
+[2.4992] self.offsetX43
+[2.5062] eventmoved192y236.00003051758
+[2.5066] self.offsetX43
+[2.5141] eventmoved193y235
+[2.5145] self.offsetX44
+[2.5235] eventmoved195y230.99998474121
+[2.5241] self.offsetX46
+[2.5316] eventmoved195y228.99998474121
+[2.5321] self.offsetX46
+[2.5394] eventmoved196y228
+[2.5399] self.offsetX47
+[2.5462] eventmoved196y226.99996948242
+[2.5465] self.offsetX47
+[2.5543] eventmoved196y225.00001525879
+[2.5551] self.offsetX47
+[2.5622] eventmoved197y224
+[2.5625] self.offsetX48
+[2.5702] eventmoved197y223.00001525879
+[2.5705] self.offsetX48
+[2.5720] eventended197y223.00001525879
+[3.2104] eventbegan133y203.00001525879
+[3.2982] eventmoved138y203.00001525879
+[3.2989] self.offsetX5
+[3.3062] eventmoved142y203.00001525879
+[3.3068] self.offsetX9
+[3.3142] eventmoved151y201.99998474121
+[3.3147] self.offsetX18
+[3.3235] eventmoved158y201.00001525879
+[3.3242] self.offsetX25
+[3.3301] eventmoved165y201.00001525879
+[3.3305] self.offsetX32
+[3.3382] eventmoved173y201.00001525879
+[3.3390] self.offsetX40
+[3.3462] eventmoved181y201.00001525879
+[3.3468] self.offsetX48
+[3.3541] eventmoved188y199.99998474121
+[3.3546] self.offsetX55
+[3.3623] eventmoved195y199.99998474121
+[3.3628] self.offsetX62
+[3.3702] eventmoved198y199.99998474121
+[3.3707] self.offsetX65
+[3.3782] eventmoved201y199.99998474121
+[3.3786] self.offsetX68
+[3.3861] eventmoved204y199.99998474121
+[3.3865] self.offsetX71
+[3.3942] eventmoved207y199.99998474121
+[3.3946] self.offsetX74
+[3.4021] eventmoved210y199.99998474121
+[3.4025] self.offsetX77
+[3.4101] eventmoved212y199.99998474121
+[3.4105] self.offsetX79
+[3.4181] eventmoved214y199.99998474121
+[3.4185] self.offsetX81
+[3.4262] eventmoved215y199.99998474121
+[3.4266] self.offsetX82
+[3.4343] eventmoved216y197.99998474121
+[3.4346] self.offsetX83
+[3.5542] eventmoved217y197.99998474121
+[3.5548] self.offsetX84
+[3.5621] eventmoved218y197.99998474121
+[3.5626] self.offsetX85
+[3.5782] eventmoved220y197.99998474121
+[3.5789] self.offsetX87
+[3.5861] eventmoved222y197
+[3.5866] self.offsetX89
+[3.5942] eventmoved224y195.99998474121
+[3.5947] self.offsetX91
+[3.6021] eventmoved225y195.99998474121
+[3.6026] self.offsetX92
+[3.6181] eventmoved226y195.99998474121
+[3.6187] self.offsetX93
+[3.6262] eventmoved228y195.99998474121
+[3.6267] self.offsetX95
+[3.6342] eventmoved230y195
+[3.6348] self.offsetX97
+[3.6421] eventmoved231y194.00001525879
+[3.6426] self.offsetX98
+[3.6510] eventmoved234y194.00001525879
+[3.6514] self.offsetX101
+[3.6582] eventmoved236y194.00001525879
+[3.6587] self.offsetX103
+[3.6742] eventmoved237y193
+[3.6748] self.offsetX104
+[3.6821] eventmoved238y193
+[3.6826] self.offsetX105
+[3.6904] eventmoved239y193
+[3.6910] self.offsetX106
+[3.7076] eventmoved241y193
+[3.7082] self.offsetX108
+[3.7302] eventmoved242y193
+[3.7308] self.offsetX109
+[3.7462] eventmoved244y192.00001525879
+[3.7468] self.offsetX111
+[3.7621] eventmoved245y192.00001525879
+[3.7626] self.offsetX112
+[3.7702] eventmoved247y192.00001525879
+[3.7705] self.offsetX114
+[3.7942] eventmoved249y190.99998474121
+[3.7948] self.offsetX116
+[3.8022] eventmoved250y190.99998474121
+[3.8026] self.offsetX117
+[3.8102] eventmoved251y190.99998474121
+[3.8106] self.offsetX118
+[3.8263] eventmoved252y190.99998474121
+[3.8268] self.offsetX119
+[3.8350] eventmoved253y190.99998474121
+[3.8354] self.offsetX120
+[3.8422] eventmoved254y190.00001525879
+[3.8427] self.offsetX121
+[3.8501] eventmoved255y190.00001525879
+[3.8504] self.offsetX122
+[3.8582] eventmoved256y190.00001525879
+[3.8588] self.offsetX123
+[3.8661] eventmoved257y190.00001525879
+[3.8665] self.offsetX124
+[3.8743] eventmoved258y190.00001525879
+[3.8749] self.offsetX125
+[3.8821] eventmoved260y190.00001525879
+[3.8825] self.offsetX127
+[3.8983] eventmoved261y190.00001525879
+[3.8989] self.offsetX128
+[3.9062] eventmoved264y190.00001525879
+[3.9067] self.offsetX131
+[3.9141] eventmoved265y190.00001525879
+[3.9144] self.offsetX132
+[3.9222] eventmoved267y190.00001525879
+[3.9230] self.offsetX134
+[3.9301] eventmoved270y190.00001525879
+[3.9304] self.offsetX137
+[3.9381] eventmoved272y190.00001525879
+[3.9385] self.offsetX139
+[3.9461] eventmoved276y190.00001525879
+[3.9464] self.offsetX143
+[3.9541] eventmoved279y190.00001525879
+[3.9545] self.offsetX146
+[3.9622] eventmoved284y190.00001525879
+[3.9625] self.offsetX151
+[3.9701] eventmoved289y190.00001525879
+[3.9705] self.offsetX156
+[3.9781] eventmoved297y190.00001525879
+[3.9785] self.offsetX164
+[3.9861] eventmoved303y188
+[3.9865] self.offsetX170
+[3.9942] eventmoved311y188
+[3.9946] self.offsetX178
+[3.9953] eventended311y188
+[4.4984] eventbegan127y175.99998474121
+[4.5543] eventmoved130y175.99998474121
+[4.5551] self.offsetX3
+[4.5626] eventmoved143y175.99998474121
+[4.5635] self.offsetX16
+[4.5703] eventmoved161y175.99998474121
+[4.5708] self.offsetX34
+[4.5783] eventmoved181y175.99998474121
+[4.5788] self.offsetX54
+[4.5861] eventmoved214y175.99998474121
+[4.5867] self.offsetX87
+[4.5942] eventmoved256y175.99998474121
+[4.5947] self.offsetX129
+[4.6021] eventmoved313y183.00001525879
+[4.6026] self.offsetX186
+[4.6102] eventmoved375y194.00001525879
+[4.6107] self.offsetX248
+[4.6189] eventmoved435y201.99998474121
+[4.6193] self.offsetX308
+[4.6262] eventmoved492y210.00001525879
+[4.6267] self.offsetX365
+[4.6341] eventmoved559y217
+[4.6345] self.offsetX432
+[4.6422] eventmoved616y225.00001525879
+[4.6428] self.offsetX489
+[4.6501] eventmoved673y230.99998474121
+[4.6505] self.offsetX546
+[4.6582] eventmoved721y235
+[4.6588] self.offsetX594
+[4.6661] eventmoved758y239.99998474121
+[4.6665] self.offsetX631
+[4.6744] eventmoved780y244
+[4.6750] self.offsetX653
+[4.6821] eventmoved793y247.00003051758
+[4.6825] self.offsetX666
+[4.6901] eventmoved803y248.99998474121
+[4.6906] self.offsetX676
+[4.6981] eventmoved806y248.99998474121
+[4.6986] self.offsetX679
+[4.7063] eventmoved809y248.99998474121
+[4.7066] self.offsetX682
+[4.7383] eventended809y248.99998474121
+[5.8263] cell touched at index: 2
+[5.8650] 添加aticle
+[6.3702] eventbegan143y463
+[6.4101] eventmoved152y460
+[6.4106] self.offsetX9
+[6.4182] eventmoved167y458
+[6.4195] self.offsetX24
+[6.4261] eventmoved205y452
+[6.4265] self.offsetX62
+[6.4340] eventmoved246y452
+[6.4345] self.offsetX103
+[6.4421] eventmoved293y452
+[6.4425] self.offsetX150
+[6.4506] eventmoved346y450
+[6.4511] self.offsetX203
+[6.4526] eventmoved346y450
+[6.4530] self.offsetX203
+[6.4594] eventmoved394y450
+[6.4599] self.offsetX251
+[6.4661] eventmoved441y450
+[6.4665] self.offsetX298
+[6.4741] eventmoved493y450
+[6.4744] self.offsetX350
+[6.4820] eventmoved541y450
+[6.4825] self.offsetX398
+[6.4900] eventmoved601y450
+[6.4905] self.offsetX458
+[6.4981] eventmoved649y450
+[6.4986] self.offsetX506
+[6.5061] eventmoved696y450
+[6.5065] self.offsetX553
+[6.5141] eventmoved737y450
+[6.5146] self.offsetX594
+[6.5221] eventmoved782y450
+[6.5225] self.offsetX639
+[6.5302] eventmoved810y450
+[6.5308] self.offsetX667
+[6.5381] eventmoved836y449
+[6.5386] self.offsetX693
+[6.5461] eventmoved853y448
+[6.5467] self.offsetX710
+[6.5541] eventmoved865y448
+[6.5545] self.offsetX722
+[6.5621] eventmoved879y445
+[6.5625] self.offsetX736
+[6.5701] eventmoved886y445
+[6.5707] self.offsetX743
+[6.5781] eventmoved893y445
+[6.5787] self.offsetX750
+[6.5868] eventmoved898y445
+[6.5876] self.offsetX755
+[6.5886] eventended898y445
+[7.4756] [INFO] Scene "Index:onExit()"
